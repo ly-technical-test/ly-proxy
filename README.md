@@ -18,6 +18,18 @@ Servidor de proxy reverso e balanceador de carga do ecossistema Lytex, responsá
 
 ---
 
-## 3. Execução
+## 3. Variáveis de Ambiente
 
-O proxy é parte exposts na infraestrutura do Komodo, responsável por unificar o acesso externo aos microsserviços.
+As configurações do proxy devem ser salvas no arquivo `.env`. As chaves necessárias são:
+
+- `APP_NAME`: Identificador do proxy (`ly-proxy`).
+- `EXTERNAL_PORT`: Porta pública de escuta do NGINX.
+- `API_PORT`: Porta interna do contêiner.
+- `ENVIRONMENT`: Ambiente de execução (`development` ou `production`).
+- `DOCKER_SUFFIX`: Sufixo para identificação dos contêineres Docker (`dev` ou `deploy`).
+
+---
+
+## 4. Execução
+
+O proxy faz parte da infraestrutura do Komodo, responsável por unificar o acesso externo aos microsserviços.
