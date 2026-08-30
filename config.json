@@ -1,0 +1,11 @@
+{
+    "serverPort": 80,
+    "targets": {
+        "ly-services": {
+            "url": "http://ly-services"
+        },
+        "ly-docs": {
+            "url": "http://ly-docs"
+        }
+    }
+}
